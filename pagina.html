@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número Secreto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #4b4343;
+            background-image: url('https://i.pinimg.com/originals/ef/72/79/ef7279107bf65b8a383abd81baf1738c.jpg');
+        }
+        .container {
+            text-align: center;
+            background-color: rgb(43, 41, 41);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(145, 139, 139, 0.1);
+        }
+        #message {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        #attempts {
+            margin-top: 1rem;
+        }
+
+        h1{
+
+            color:azure
+        }
+
+        p{
+            color:azure
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Adivina el Número Secreto</h1>
+        <p>Intenta adivinar el número secreto entre 1 y 100.</p>
+        <input type="text" id="guessInput" placeholder="Ingresa tu número">
+        <button onclick="checkGuess()">Adivinar</button>
+        <div id="message"></div>
+        <div id="attempts"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
